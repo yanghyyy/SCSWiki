@@ -31,6 +31,23 @@ const sources = computed<Source[]>(() => {
   const value = frontmatter.value.sources;
   return Array.isArray(value) ? value : [];
 });
+const formatDateTime = (value: unknown) => {
+  if (!value) {
+    return '未填写';
+  }
+
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    const pad = (part: number) => String(part).padStart(2, '0');
+    return (
+      [value.getUTCFullYear(), pad(value.getUTCMonth() + 1), pad(value.getUTCDate())].join('-') +
+      ` ${pad(value.getUTCHours())}:${pad(value.getUTCMinutes())}:${pad(value.getUTCSeconds())}`
+    );
+  }
+
+  const text = String(value);
+  const match = text.match(/^(\d{4}-\d{2}-\d{2})(?:[T ](\d{2}:\d{2}:\d{2}))?/);
+  return match ? `${match[1]} ${match[2] ?? '00:00:00'}` : text;
+};
 const maintainers = computed(() => {
   const value = frontmatter.value.maintainers;
   return Array.isArray(value) ? value.join('、') : '未填写';
@@ -56,11 +73,11 @@ const isExperience = computed(() => contentType.value === 'experience');
     <div class="content-meta__body">
       <div class="content-meta__item">
         <strong>最后核验</strong>
-        {{ frontmatter.last_verified ?? '未填写' }}
+        {{ formatDateTime(frontmatter.last_verified) }}
       </div>
       <div class="content-meta__item">
         <strong>建议复核</strong>
-        {{ frontmatter.review_after ?? '未填写' }}
+        {{ formatDateTime(frontmatter.review_after) }}
       </div>
       <div class="content-meta__item">
         <strong>维护者</strong>

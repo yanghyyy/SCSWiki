@@ -9,7 +9,7 @@ status: active
 last_verified: 2026-06-23
 review_after: 2026-12-23
 maintainers:
-  - SCSWiki 维护组
+  - 程序设计算法协会
 sources: []
 ---
 

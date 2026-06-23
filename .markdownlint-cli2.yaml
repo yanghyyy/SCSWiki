@@ -5,6 +5,7 @@ config:
   MD033:
     allowed_elements:
       - ContentMeta
+      - HomePage
       - a
       - div
       - h1
