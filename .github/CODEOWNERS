@@ -1,0 +1,8 @@
+# CODEOWNERS 模板
+# 建立 GitHub 组织或维护团队后，可将下面的示例改为真实团队。
+# 不要填写虚构账号。
+#
+# * @org/team
+# /docs/study/ @org/study-maintainers
+# /docs/services/ @org/content-reviewers
+

@@ -1,0 +1,27 @@
+---
+title: 升学与就业总览
+description: 升学与就业准备的通用资料边界
+category: career
+audience:
+  - 本科生
+content_type: experience
+status: active
+last_verified: 2026-06-23
+review_after: 2026-12-23
+maintainers:
+  - SCSWiki 维护组
+sources: []
+---
+
+<ContentMeta />
+
+# 升学与就业总览
+
+本页只记录通用准备方向，不发布具体保研、招聘、推荐、评优或学院安排。相关政策和流程必须以正式通知为准。
+
+## 通用准备方向
+
+- 维护个人项目和简历材料。
+- 记录课程、竞赛、科研或实习经历的公开可描述部分。
+- 保护个人身份信息和未公开材料。
+- 对时间敏感信息保留来源和日期。

@@ -1,0 +1,38 @@
+name: 新内容建议
+description: 建议新增页面或补充主题
+title: '[新内容] '
+labels: ['content', 'proposal', 'needs-triage']
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: 建议主题
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: 为什么需要这个内容
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: 建议大纲
+      description: 可以列出希望覆盖的小节。
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: 来源材料
+      description: 如果涉及学校特定事实，请提供公开来源名称和 URL。
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我没有公开填写手机号、学号、身份证号、群号、内部系统链接或其他个人隐私。
+          required: true

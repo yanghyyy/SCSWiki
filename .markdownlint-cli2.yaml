@@ -1,0 +1,22 @@
+config:
+  MD013: false
+  MD025:
+    front_matter_title: ''
+  MD033:
+    allowed_elements:
+      - ContentMeta
+      - a
+      - div
+      - h1
+      - main
+      - p
+      - section
+      - span
+      - strong
+  MD041: false
+globs:
+  - '**/*.md'
+ignores:
+  - 'node_modules/**'
+  - 'docs/.vitepress/cache/**'
+  - 'docs/.vitepress/dist/**'

@@ -1,0 +1,32 @@
+name: 内容过期反馈
+description: 反馈页面可能已经过期
+title: '[内容过期] '
+labels: ['content', 'outdated', 'needs-triage']
+body:
+  - type: input
+    id: page-url
+    attributes:
+      label: 页面 URL
+    validations:
+      required: true
+  - type: textarea
+    id: outdated
+    attributes:
+      label: 过期说明
+      description: 请说明哪些内容可能过期，以及你判断的依据。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 新来源材料
+      description: 请提供可公开访问的来源名称和 URL。
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我没有公开填写手机号、学号、身份证号、群号、内部系统链接或其他个人隐私。
+          required: true

@@ -1,0 +1,40 @@
+name: 内容错误反馈
+description: 反馈页面中的错误、表述不清或来源问题
+title: '[内容错误] '
+labels: ['content', 'needs-triage']
+body:
+  - type: input
+    id: page-url
+    attributes:
+      label: 页面 URL
+      description: 请填写公开页面链接或仓库内路径。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 请说明哪里有误，不要填写个人隐私。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修改
+      description: 如果有建议文本，请写在这里。
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: 来源材料
+      description: 请提供可公开访问的来源名称和 URL。
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我没有公开填写手机号、学号、身份证号、群号、内部系统链接或其他个人隐私。
+          required: true
