@@ -10,7 +10,9 @@ last_verified: 2026-06-23
 review_after: 2026-12-23
 maintainers:
   - 程序设计算法协会
-sources: []
+sources:
+  - name: 西华师范大学程序设计算法协会
+    url: https://www.cwnupaa.com/
 ---
 
 <ContentMeta />

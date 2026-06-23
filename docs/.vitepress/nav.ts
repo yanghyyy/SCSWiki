@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'vitepress';
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/' },
-  { text: '新生入门', link: '/start/' },
+  { text: '新生专题', link: '/start/' },
   { text: '专业学习', link: '/study/' },
   { text: '竞赛与实践', link: '/competitions/' },
   { text: '校园生活', link: '/campus/' },

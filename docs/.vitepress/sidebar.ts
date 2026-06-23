@@ -3,9 +3,11 @@ import type { DefaultTheme } from 'vitepress';
 export const sidebar: DefaultTheme.Sidebar = {
   '/start/': [
     {
-      text: '新生入门',
+      text: '新生专题',
       items: [
-        { text: '总览', link: '/start/' },
+        { text: '新生报到', link: '/start/' },
+        { text: '学院信息', link: '/start/info' },
+        { text: '学院组织', link: '/start/org' },
         { text: '常见问题', link: '/start/faq' },
       ],
     },
