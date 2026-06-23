@@ -61,7 +61,7 @@ export default defineConfig({
       },
     },
     editLink: {
-      pattern: 'https://github.com/OWNER/REPO/edit/main/docs/:path',
+      pattern: 'https://github.com/your-name/SCSWiki/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
     footer: {
