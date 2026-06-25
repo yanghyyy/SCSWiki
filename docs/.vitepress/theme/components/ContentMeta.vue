@@ -39,14 +39,14 @@ const formatDateTime = (value: unknown) => {
   if (value instanceof Date && !Number.isNaN(value.getTime())) {
     const pad = (part: number) => String(part).padStart(2, '0');
     return (
-      [value.getUTCFullYear(), pad(value.getUTCMonth() + 1), pad(value.getUTCDate())].join('-') +
-      ` ${pad(value.getUTCHours())}:${pad(value.getUTCMinutes())}:${pad(value.getUTCSeconds())}`
+      [value.getUTCFullYear(), pad(value.getUTCMonth() + 1)].join('-') +
+      ` ${pad(value.getUTCHours())}:${pad(value.getUTCMinutes())}`
     );
   }
 
   const text = String(value);
   const match = text.match(/^(\d{4}-\d{2}-\d{2})(?:[T ](\d{2}:\d{2}:\d{2}))?/);
-  return match ? `${match[1]} ${match[2] ?? '00:00:00'}` : text;
+  return match ? `${match[1]}` : text;
 };
 const maintainers = computed(() => {
   const value = frontmatter.value.maintainers;
@@ -86,7 +86,13 @@ const isExperience = computed(() => contentType.value === 'experience');
       <div class="content-meta__item">
         <strong>来源</strong>
         <template v-if="sources.length > 0">
-          <a v-for="source in sources" :key="source.url" :href="source.url" rel="noreferrer">
+          <a
+            v-for="source in sources"
+            target="_black"
+            :key="source.url"
+            :href="source.url"
+            rel="noreferrer"
+          >
             {{ source.name }}
           </a>
         </template>

@@ -1,0 +1,31 @@
+---
+title: 赞助鸣谢
+description: 记录支持 SCSWiki 持续维护的赞助名单
+category: sponsor
+audience:
+  - 读者
+  - 维护者
+content_type: verified
+status: active
+last_verified: 2026-06-25
+review_after: 2026-09-01
+maintainers:
+  - SCSWiki 维护组
+sources: []
+---
+
+<ContentMeta />
+
+# 赞助鸣谢
+
+SCSWiki 是面向西华师范大学计算机学院学生的非官方学生知识库。赞助主要用于 AI Tokens、域名、部署、内容校验、资料整理和长期维护，不影响页面内容的可信度判断。
+
+## 赞助名单
+
+| 姓名   | 年级班级  | 赞助金额 |
+| ------ | --------- | :------- |
+| 肖\*宇 | 2025级4班 | ¥10.00   |
+
+## 内容边界
+
+赞助名单只用于感谢支持者，不作为任何排名、推荐或权益承诺。页面维护者应定期核对记录，发现赞助者希望撤回展示时，应及时移除对应条目。

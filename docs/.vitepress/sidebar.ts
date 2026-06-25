@@ -6,7 +6,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '新生专题',
       items: [
         { text: '新生报到', link: '/start/' },
-        { text: '军训专题', link: '/start/military-training' },
+        { text: '军训专题', link: '/start/jx' },
         { text: '学院信息', link: '/start/info' },
         { text: '学院组织', link: '/start/org' },
         { text: '常见问题', link: '/start/faq' },
@@ -18,33 +18,39 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '专业学习',
       items: [
         { text: '总览', link: '/study/' },
-        { text: 'C/C++ 入门', link: '/study/cpp-basics' },
+        { text: 'C语言程序设计', link: '/study/c' },
+        { text: '数据结构', link: '/study/ds' },
+        { text: '离散数学', link: '/study/ls' },
+        { text: '计算机组成原理', link: '/study/jz' },
+        { text: '计算机网络', link: '/study/jw' },
+        { text: '计算机操作系统', link: '/study/jc' },
       ],
     },
   ],
   '/development/': [
     {
-      text: '开发环境',
+      text: '开发专题',
       items: [
         { text: '总览', link: '/development/' },
-        { text: 'Git 入门', link: '/development/git-basics' },
-        { text: 'Linux 入门', link: '/development/linux-basics' },
+        { text: '传统开发', link: '/development/tradition' },
+        { text: 'AI赋能开发', link: '/development/ai' },
+        { text: 'Agent开发', link: '/development/agent' },
       ],
     },
   ],
   '/competitions/': [
     {
-      text: '竞赛与实践',
+      text: '学科竞赛',
       items: [
         { text: '总览', link: '/competitions/' },
-        { text: '算法竞赛入门', link: '/competitions/algorithm' },
+        { text: '算法类竞赛', link: '/competitions/algorithm' },
+        { text: '软件类竞赛', link: '/competitions/software' },
+        { text: '电子类竞赛', link: '/competitions/electronic' },
+        { text: '机器人竞赛', link: '/competitions/robot' },
+        { text: '创新创业竞赛', link: '/competitions/cxcy' },
+        { text: '师范生技能竞赛', link: '/competitions/normal' },
+        { text: '数学类竞赛', link: '/competitions/math' },
       ],
-    },
-  ],
-  '/research/': [
-    {
-      text: '科研与实验室',
-      items: [{ text: '信息模板', link: '/research/lab-template' }],
     },
   ],
   '/campus/': [
@@ -56,22 +62,58 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
-  '/services/': [
+  '/organization/': [
     {
-      text: '办事指南',
-      items: [{ text: '总览', link: '/services/' }],
+      text: '学院组织',
+      items: [
+        { text: '简介', link: '/organization/' },
+        { text: '学院领导班子', link: '/organization/ldbz' },
+        { text: '两委会', link: '/organization/lwh' },
+        { text: '学生社团', link: '/organization/xsst' },
+        { text: '办公室/实验室', link: '/organization/lab' },
+      ],
     },
   ],
-  '/career/': [
+  '/party/': [
     {
-      text: '升学与就业',
-      items: [{ text: '总览', link: '/career/' }],
+      text: '党建专题',
+      items: [
+        { text: '总览', link: '/party/' },
+        { text: '入党流程', link: '/party/join' },
+        { text: '评选制度', link: '/party/selection' },
+      ],
+    },
+  ],
+  '/teacher/': [
+    {
+      text: '老师专栏',
+      items: [
+        { text: '总览', link: '/teacher/' },
+        { text: '教研室', link: '/teacher/jys' },
+        { text: '辅导员', link: '/teacher/fdy' },
+        { text: '硕士生导师', link: '/teacher/ssds' },
+        { text: '公共课', link: '/teacher/ggk' },
+      ],
+    },
+  ],
+  '/course/': [
+    {
+      text: '课程专栏',
+      items: [
+        { text: '总览', link: '/course/' },
+        { text: '选课制度', link: '/course/xk' },
+        { text: '专业课', link: '/course/zyk' },
+        { text: '公共课', link: '/course/ggk' },
+      ],
     },
   ],
   '/faq/': [
     {
       text: '常见问题',
-      items: [{ text: '内容纠错说明', link: '/faq/content-correction' }],
+      items: [
+        { text: '总览', link: '/faq/' },
+        { text: '内容纠错说明', link: '/faq/content-correction' },
+      ],
     },
   ],
   '/about/': [
@@ -84,6 +126,12 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: '如何贡献', link: '/about/contribute' },
         { text: '隐私与内容边界', link: '/about/privacy-boundary' },
       ],
+    },
+  ],
+  '/sponsor/': [
+    {
+      text: '赞助',
+      items: [{ text: '简介', link: '/sponsor/' }],
     },
   ],
 };

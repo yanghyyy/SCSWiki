@@ -21,6 +21,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    logo: '/logo.svg',
     nav,
     sidebar,
     outline: {
@@ -62,7 +63,7 @@ export default defineConfig({
       next: '下一篇',
     },
     lastUpdated: {
-      text: '页面最后提交时间',
+      text: '页面最后更新',
       formatOptions: {
         dateStyle: 'medium',
         timeStyle: 'short',

@@ -5,12 +5,17 @@ export const contentCategories = [
   'career',
   'campus',
   'competitions',
+  'course',
   'development',
   'faq',
+  'organization',
+  'party',
   'research',
   'services',
+  'sponsor',
   'start',
   'study',
+  'teacher',
 ] as const;
 
 export const contentTypes = ['official-source', 'verified', 'experience', 'archived'] as const;
