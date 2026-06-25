@@ -899,3 +899,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+.vp-doc .image-grid.two {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 20px 0;
+}
+
+.vp-doc .image-grid figure {
+  margin: 0;
+}
+
+.vp-doc .image-grid img {
+  border: 1px solid var(--scs-line);
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.vp-doc .image-grid figcaption {
+  color: var(--scs-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .vp-doc .image-grid.two {
+    grid-template-columns: 1fr;
+  }
+}
