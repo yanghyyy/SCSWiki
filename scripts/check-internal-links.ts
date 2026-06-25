@@ -64,8 +64,8 @@ function candidateFiles(baseDir: string, linkTarget: string) {
     candidates.push(`${base}.md`, path.join(base, 'index.md'), base);
   }
 
-  if (base.startsWith('/assets/')) {
-    candidates.push(path.join(publicRoot, base.replace(/^\/+/, '')));
+  if (linkTarget.startsWith('/') && ext) {
+    candidates.push(path.join(publicRoot, linkTarget.replace(/^\/+/, '')));
   }
 
   return candidates;

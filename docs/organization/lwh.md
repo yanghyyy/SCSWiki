@@ -58,10 +58,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-jjb-1.png" alt="" />
+    <img src="/images/lwh-jjb-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-jjb-2.png" alt="" />
+    <img src="/images/lwh-jjb-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -86,10 +86,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-zh-1.png" alt="" />
+    <img src="/images/lwh-zh-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-zh-2.png" alt="" />
+    <img src="/images/lwh-zh-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -114,10 +114,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-ty-1.png" alt="" />
+    <img src="/images/lwh-ty-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-ty-2.png" alt="" />
+    <img src="/images/lwh-ty-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -140,10 +140,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-xx-1.png" alt="" />
+    <img src="/images/lwh-xx-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-xx-2.png" alt="" />
+    <img src="/images/lwh-xx-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -173,7 +173,7 @@ sources:
 
 <div class="image-grid">
   <figure>
-    <img src="/images/lwh-qy-1.png" alt="" />
+    <img src="/images/lwh-qy-1.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -201,10 +201,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-sc-1.png" alt="" />
+    <img src="/images/lwh-sc-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-sc-2.png" alt="" />
+    <img src="/images/lwh-sc-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -238,10 +238,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-qzx-1.png" alt="" />
+    <img src="/images/lwh-qzx-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-qzx-2.png" alt="" />
+    <img src="/images/lwh-qzx-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -268,10 +268,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-wyb-1.png" alt="" />
+    <img src="/images/lwh-wyb-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-wyb-2.png" alt="" />
+    <img src="/images/lwh-wyb-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -283,7 +283,7 @@ sources:
 
 #### 部门工作
 
-**一．活动影像记录（拍摄活动照片）**
+一．活动影像记录（拍摄活动照片）
 
 1. 全流程跟拍：覆盖活动筹备、进行、收尾各阶段，包括场地布置、嘉宾签到、精彩互动、颁奖仪式等关键节点；
 2. 多视角拍摄：运用广角镜头捕捉全景，特写镜头记录细节，结合低角度、俯拍等创意构图增强画面感染力；
@@ -291,7 +291,8 @@ sources:
 
 **二. 新闻稿件创作（撰写活动稿件）深度报道**：呈现活动全貌，穿插背景延伸、嘉宾金句、观众反响等多元视角。
 
-**三. 空间视觉营造（活动黑板报设计）**
+三. 空间视觉营造（活动黑板报设计）
+
 1. 主题策划：结合节日节点（如校庆、教师节）或社会热点（如环保、航天）确定创作方向；
 2. 立体化呈现：融合粉笔画、彩纸拼贴、立体浮雕等技法，搭配LED灯带、二维码互动等数字元素。
 
@@ -303,10 +304,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-xcb-1.png" alt="" />
+    <img src="/images/lwh-xcb-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-xcb-2.png" alt="" />
+    <img src="/images/lwh-xcb-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -331,10 +332,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-zzb-1.png" alt="" />
+    <img src="/images/lwh-zzb-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-zzb-2.png" alt="" />
+    <img src="/images/lwh-zzb-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -360,10 +361,10 @@ sources:
 
 <div class="image-grid two">
   <figure>
-    <img src="/images/lwh-xmt-1.png" alt="" />
+    <img src="/images/lwh-xmt-1.png" alt="两委会图片" />
   </figure>
   <figure>
-    <img src="/images/lwh-xmt-2.png" alt="" />
+    <img src="/images/lwh-xmt-2.png" alt="两委会图片" />
   </figure>
 </div>
 
@@ -373,73 +374,73 @@ sources:
 
 > 主持队
 
-#### 部门简介
+#### 主持队 部门简介
 
 舞台之上，他们是点亮灵魂的话语艺术家加入主持队，用声音传递炽热情感，以语言编织斑斓梦想。从校园晚会到各类活动，我们执笔主持稿、登台控全场，合力打造专属视听盛宴，让每一次登台，都成为难忘的高光时刻。
 
-#### 部门工作
+#### 主持队 部门工作
 
 为了登台时的专业闪耀，日常训练聚焦仪态管理、发声技巧、情感表达，全方位打磨主持功底。学院活动主持重任由我们担当，每周训练中选拔主持人，从稿件撰写到现场排练，全程参与，让每一场活动都因我们的主持而精彩。
 
-#### 部门优势
+#### 主持队 部门优势
 
 1. 掌握公众演讲必杀技，告别社恐、自信开麦；
 2. 练就字正腔圆普通话，播音级语言质感拿捏；
 3. 解锁朗诵、辩论隐藏技能，表达力 upup；
 4. 收获超强团队默契，和同频伙伴并肩战斗，攒下珍贵友谊。
 
-![](/images/lwh-zcd-1.png)
+![两委会图片](/images/lwh-zcd-1.png)
 
 > 辩论队
 
-#### 部门简介
+#### 辩论队 部门简介
 
 我们以辩为舟，穿梭于观点的星河，在 “人性善恶” 的探讨里洞察幽微，于 “时代浪潮” 的争辩中把握脉搏。我们用语言编织思辨的锦缎，让每一次交锋，都成为点亮认知的星火，让热爱思辨的你，找到灵魂共鸣的同路人，共赴思维探险之旅。
 
-#### 部门工作
+#### 辩论队 部门工作
 
 开展逻辑训练、辩题剖析、模拟辩论，提升辩论能力，最终选出种子选手代表学院参加西华之声。
 
-#### 部门优势
+#### 辩论队 部门优势
 
 在这里，能沉浸式感受观点交锋的趣味，锻炼出惊艳的口才，不再怯场；在这里，能轻松获取第二课堂学时，没有繁冗的工作任务；在这里，队友们同频又合拍，相处氛围融洽温暖，既能在思辨中成长，也能收获真挚友谊。
 
-![](/images/lwh-bld-1.png)
+![两委会图片](/images/lwh-bld-1.png)
 
 > 礼仪队
 
-#### 部门简介
+#### 礼仪队 部门简介
 
 礼仪队作为展现组织形象的重要窗口，以专业的礼仪服务为核心，通过系统培训让成员掌握规范的礼仪技巧，在各类正式活动中承担引导、接待、颁奖等工作，既保障活动有序开展，也传递出尊重得体的社交态度，是提升活动规格与组织形象的重要力量。
 
-#### 部门工作
+#### 礼仪队 部门工作
 
 1. 负责学院内各类正式活动的礼仪服务，如开幕式、闭幕式、颁奖典礼、毕业晚会等，具体工作包括引导嘉宾、颁奖递物等工作；
 2. 成员需经过系统的礼仪培训，掌握基本的站姿、走姿、微笑、手势等礼仪规范，以及接待、沟通等技巧。
 
-#### 部门优势
+#### 礼仪队 部门优势
 
 加入礼仪队，既能通过系统的礼仪培训塑造优雅气质，在各类重要活动中锻炼沟通、应变与团队协作能力，积累丰富的社交经验和视野；又能在为活动与组织增光添彩中收获成就感，增强自信心，实现个人素养与价值感的双重提升。
 
-![](/images/lwh-lyd-1.png)
+![两委会图片](/images/lwh-lyd-1.png)
 
 > 舞蹈队
 
-#### 部门简介
+#### 舞蹈队 部门简介
 
 舞蹈队是校园文化里的闪亮之星，为大学生活注入无限活力与魅力。这里汇聚了一群怀揣舞蹈梦想、热爱跳舞的同学。在忙碌的学业之余，舞蹈队为大家提供了释放压力的空间，让同学们尽情享受舞蹈带来的快乐与成就感。无论你基础如何，只要对舞蹈有兴趣，舞蹈队都热忱欢迎你的加入！舞蹈队主要涵盖 JAZZ、KPOP、民族舞等多种风格。
 
-#### 部门工作
+#### 舞蹈队 部门工作
 
 1. 开展舞蹈基本功训练；
 2. 进行成品舞教学与走位排练；
 3. 参与活动彩排及正式表演。
 
-#### 部门优势
+#### 舞蹈队 部门优势
 
 舞蹈是独特的艺术表达形式，队员们通过不同舞蹈作品传递细腻情感、展现深刻思想，收获美的享受。在学习与表演过程中，不断提升审美能力，更好地感知美、创造美。提供社交平台，结识志同道合的朋友，收获自信心和满足感。
 
-![](/images/lwh-wdd-1.png)
+![两委会图片](/images/lwh-wdd-1.png)
 
 ### 党建办
 
