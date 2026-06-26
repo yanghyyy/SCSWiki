@@ -11,6 +11,7 @@ export default defineConfig({
   lang: 'zh-CN',
   base,
   cleanUrls: true,
+  head: [['link', { href: '/logo.svg', rel: 'icon', type: 'image/svg+xml' }]],
   lastUpdated: true,
   ignoreDeadLinks: false,
   markdown: {
@@ -26,7 +27,7 @@ export default defineConfig({
     sidebar,
     outline: {
       level: [2, 3],
-      label: '本页目录',
+      label: '目录',
     },
     search: {
       provider: 'local',

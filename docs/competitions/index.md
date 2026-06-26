@@ -6,8 +6,6 @@ audience:
   - 本科生
 content_type: experience
 status: active
-last_verified: 2026-06-23
-review_after: 2026-12-23
 maintainers:
   - 程序设计算法协会
 sources:

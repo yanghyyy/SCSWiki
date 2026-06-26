@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isOutdated, validateFrontMatter } from '../content-schema';
+import { validateFrontMatter } from '../content-schema';
 
 const validFrontMatter = {
   title: '示例页面',
@@ -8,8 +8,6 @@ const validFrontMatter = {
   audience: ['本科生'],
   content_type: 'experience',
   status: 'active',
-  last_verified: '2026-06-23',
-  review_after: '2026-12-23',
   maintainers: ['SCSWiki 维护组'],
   sources: [],
 };
@@ -29,18 +27,6 @@ describe('front matter schema', () => {
     expect(validateFrontMatter({ ...validFrontMatter, status: 'published' }).success).toBe(false);
   });
 
-  it('rejects invalid date format', () => {
-    expect(validateFrontMatter({ ...validFrontMatter, last_verified: '2026/06/23' }).success).toBe(
-      false,
-    );
-  });
-
-  it('rejects review_after earlier than last_verified', () => {
-    expect(validateFrontMatter({ ...validFrontMatter, review_after: '2026-01-01' }).success).toBe(
-      false,
-    );
-  });
-
   it('rejects active high-risk official-source pages without sources', () => {
     const result = validateFrontMatter({
       ...validFrontMatter,
@@ -48,10 +34,5 @@ describe('front matter schema', () => {
       content_type: 'official-source',
     });
     expect(result.success).toBe(false);
-  });
-
-  it('detects outdated content', () => {
-    expect(isOutdated('2026-06-01', '2026-06-23')).toBe(true);
-    expect(isOutdated('2026-12-01', '2026-06-23')).toBe(false);
   });
 });

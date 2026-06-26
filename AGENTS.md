@@ -46,8 +46,6 @@
 - `audience`
 - `content_type`
 - `status`
-- `last_verified`
-- `review_after`
 - `maintainers`
 - `sources`
 

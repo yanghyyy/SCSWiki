@@ -6,8 +6,6 @@ audience:
   - 本科新生
 content_type: official-source
 status: needs-review
-last_verified: 2026-06-23
-review_after: 2026-09-01
 maintainers:
   - SCSWiki 维护组
 sources: []
@@ -26,4 +24,4 @@ sources: []
 - 正式来源名称和 URL。
 - 认证方式说明。
 - 常见问题处理渠道。
-- 信息发布日期和复核日期。
+- 信息发布日期、适用时间或来源更新时间。

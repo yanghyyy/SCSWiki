@@ -193,8 +193,8 @@
 
 - 内容类型；
 - 页面状态；
-- 最后核验日期；
-- 建议复核日期；
+- 最后更新；
+- 适用对象；
 - 维护者；
 - 来源数量或来源列表入口。
 
@@ -212,7 +212,7 @@
 - `needs-review`
 - `archived`
 
-当构建日期晚于 `review_after` 时，在页面显示“内容可能已经过期”的警告。该警告不能依赖后端。
+最后更新时间由 VitePress/Git 自动生成，不要求维护者在 Front Matter 中手动填写日期。
 
 对于 `experience` 类型，显示“学生经验，不应视为学校正式规定”。
 
@@ -231,8 +231,6 @@ audience:
   - 本科新生
 content_type: verified
 status: needs-review
-last_verified: 2026-06-23
-review_after: 2026-09-01
 maintainers:
   - SCSWiki 维护组
 sources: []
@@ -250,18 +248,15 @@ sources: []
 - `category`
 - `content_type`
 - `status`
-- `last_verified`
-- `review_after`
 - `maintainers`
 - `sources`
 
 规则：
 
-- 日期使用 `YYYY-MM-DD`；
-- `review_after` 不早于 `last_verified`；
 - 枚举值必须合法；
 - `maintainers` 必须为非空数组；
 - `sources` 为对象数组或空数组；
+- 如需说明来源发布时间、适用年级或适用学期，应写入正文或来源说明；
 - `active` 且属于政策、办事流程、培养方案、奖助、考试等高风险分类的页面，原则上至少有一个来源；
 - 示例、首页、索引页可通过明确白名单或专用字段豁免，但不能静默跳过所有验证。
 
@@ -363,10 +358,7 @@ sources: []
 - 合法 Front Matter 通过；
 - 缺少必填字段失败；
 - 非法枚举失败；
-- 日期格式错误失败；
-- `review_after < last_verified` 失败；
 - 高风险 active 页面无来源时失败；
-- 过期状态判断正确；
 - 内部相对链接解析至少覆盖正常链接、锚点、图片和不存在目标。
 
 ### 6.3 内部链接检查
@@ -469,7 +461,7 @@ sources: []
 - 四种状态；
 - 来源等级；
 - 时间敏感内容如何维护；
-- `last_verified` 与 Git 修改时间的区别；
+- 页面最后更新时间的自动生成方式；
 - 何时归档；
 - 不确定信息如何表达；
 - 页面模板。

@@ -6,8 +6,6 @@ audience:
   - 贡献者
 content_type: verified
 status: active
-last_verified: 2026-06-23
-review_after: 2026-12-23
 maintainers:
   - SCSWiki 维护组
 sources: []

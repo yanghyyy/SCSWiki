@@ -107,6 +107,16 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/services/': [
+    {
+      text: '办事指南',
+      items: [
+        { text: '总览', link: '/services/' },
+        { text: '奖助学金', link: '/services/scholarship' },
+        { text: '保研', link: '/services/postgraduate' },
+      ],
+    },
+  ],
   '/faq/': [
     {
       text: '常见问题',

@@ -1,13 +1,11 @@
 ---
 title: 内容可信度说明
-description: SCSWiki 如何标记来源、状态和复核时间
+description: SCSWiki 如何标记来源、状态和更新时间
 category: about
 audience:
   - 所有读者
 content_type: verified
 status: active
-last_verified: 2026-06-23
-review_after: 2026-12-23
 maintainers:
   - SCSWiki 维护组
 sources: []
@@ -17,7 +15,7 @@ sources: []
 
 # 内容可信度说明
 
-SCSWiki 使用内容类型和页面状态共同描述可信度。它们帮助读者判断页面能不能直接参考，也帮助维护者发现需要复核的内容。
+SCSWiki 使用内容类型、页面状态、适用对象和来源共同描述可信度。它们帮助读者判断页面能不能直接参考，也帮助维护者发现需要补充来源或重新核验的内容。
 
 ## 内容类型
 
@@ -25,6 +23,10 @@ SCSWiki 使用内容类型和页面状态共同描述可信度。它们帮助读
 - `verified`：已由维护者核验，适合记录站点规则或通用信息。
 - `experience`：学生经验，不应视为学校正式规定。
 - `archived`：历史内容，仅作参考。
+
+## 更新时间
+
+页面顶部的“最后更新”来自 Git 修改时间，由 VitePress 自动生成，不需要在 Front Matter 中手动填写。
 
 ## 来源要求
 

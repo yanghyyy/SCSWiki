@@ -6,8 +6,6 @@ audience:
   - 本科新生
 content_type: experience
 status: active
-last_verified: 2026-06-23
-review_after: 2026-09-01
 maintainers:
   - SCSWiki 维护组
 sources: []

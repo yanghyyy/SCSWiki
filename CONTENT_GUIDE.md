@@ -1,6 +1,6 @@
 # 内容规范
 
-本文件说明 SCSWiki 的内容可信度、页面状态和写作边界。
+本文说明 SCSWiki 的内容可信度、页面状态和写作边界。
 
 ## 内容类型
 
@@ -13,7 +13,7 @@
 
 - `draft`：草稿，结构或内容尚未完成。
 - `active`：当前可读，但仍需结合来源判断适用性。
-- `needs-review`：缺少可靠来源或等待复核。
+- `needs-review`：缺少可靠来源或等待维护者核验。
 - `archived`：归档内容，不应作为当前依据。
 
 ## 来源等级
@@ -25,7 +25,9 @@
 
 ## 时间敏感内容
 
-涉及政策、流程、时间、地点、人员、奖助、考试、培养方案和竞赛认定的页面，需要填写 `last_verified` 和 `review_after`。`last_verified` 是维护者核验日期，不等同于 Git 提交时间。
+涉及政策、流程、时间、地点、人员、奖助、考试、培养方案和竞赛认定的页面，应优先标记为 `needs-review`，补充公开正式来源后再改为 `active`。
+
+页面顶部的“最后更新”由 VitePress 根据 Git 修改时间自动生成，不再在 Front Matter 中手动填写日期。需要额外说明时，直接在正文中写明来源发布日期、适用年级或适用学期。
 
 ## 何时归档
 
@@ -48,8 +50,6 @@ audience:
   - 本科新生
 content_type: official-source
 status: needs-review
-last_verified: 2026-06-23
-review_after: 2026-09-01
 maintainers:
   - SCSWiki 维护组
 sources: []

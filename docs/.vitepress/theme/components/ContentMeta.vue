@@ -7,7 +7,7 @@ type Source = {
   url: string;
 };
 
-const { frontmatter } = useData();
+const { frontmatter, page } = useData();
 
 const contentTypeLabels: Record<string, string> = {
   'official-source': '公开正式来源整理',
@@ -23,39 +23,45 @@ const statusLabels: Record<string, string> = {
   archived: '已归档',
 };
 
-const today = new Date().toISOString().slice(0, 10);
-
 const contentType = computed(() => String(frontmatter.value.content_type ?? ''));
 const status = computed(() => String(frontmatter.value.status ?? ''));
 const sources = computed<Source[]>(() => {
   const value = frontmatter.value.sources;
   return Array.isArray(value) ? value : [];
 });
+
+const lastUpdated = computed(() => page.value.lastUpdated || frontmatter.value.last_verified);
+
 const formatDateTime = (value: unknown) => {
   if (!value) {
-    return '未填写';
+    return '暂无记录';
   }
 
-  if (value instanceof Date && !Number.isNaN(value.getTime())) {
-    const pad = (part: number) => String(part).padStart(2, '0');
-    return (
-      [value.getUTCFullYear(), pad(value.getUTCMonth() + 1)].join('-') +
-      ` ${pad(value.getUTCHours())}:${pad(value.getUTCMinutes())}`
-    );
+  const date = value instanceof Date ? value : new Date(Number(value) || String(value));
+
+  if (!Number.isNaN(date.getTime())) {
+    return date.toLocaleDateString('zh-CN', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
   }
 
   const text = String(value);
-  const match = text.match(/^(\d{4}-\d{2}-\d{2})(?:[T ](\d{2}:\d{2}:\d{2}))?/);
-  return match ? `${match[1]}` : text;
+  const match = text.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : text;
 };
+
 const maintainers = computed(() => {
   const value = frontmatter.value.maintainers;
   return Array.isArray(value) ? value.join('、') : '未填写';
 });
-const isOutdated = computed(() => {
-  const reviewAfter = frontmatter.value.review_after;
-  return typeof reviewAfter === 'string' && today > reviewAfter;
+
+const audience = computed(() => {
+  const value = frontmatter.value.audience;
+  return Array.isArray(value) && value.length > 0 ? value.join('、') : '所有读者';
 });
+
 const needsStatusWarning = computed(() => ['draft', 'needs-review'].includes(status.value));
 const isExperience = computed(() => contentType.value === 'experience');
 </script>
@@ -72,12 +78,12 @@ const isExperience = computed(() => contentType.value === 'experience');
     </div>
     <div class="content-meta__body">
       <div class="content-meta__item">
-        <strong>最后核验</strong>
-        {{ formatDateTime(frontmatter.last_verified) }}
+        <strong>最后更新</strong>
+        {{ formatDateTime(lastUpdated) }}
       </div>
       <div class="content-meta__item">
-        <strong>建议复核</strong>
-        {{ formatDateTime(frontmatter.review_after) }}
+        <strong>适用对象</strong>
+        {{ audience }}
       </div>
       <div class="content-meta__item">
         <strong>维护者</strong>
@@ -88,9 +94,9 @@ const isExperience = computed(() => contentType.value === 'experience');
         <template v-if="sources.length > 0">
           <a
             v-for="source in sources"
-            target="_black"
             :key="source.url"
             :href="source.url"
+            target="_blank"
             rel="noreferrer"
           >
             {{ source.name }}
@@ -98,9 +104,6 @@ const isExperience = computed(() => contentType.value === 'experience');
         </template>
         <template v-else>暂无公开来源，需补充核验</template>
       </div>
-    </div>
-    <div v-if="isOutdated" class="content-meta__warning">
-      内容可能已经过期，请优先查看学校或学院最新正式通知。
     </div>
     <div v-if="isExperience" class="content-meta__warning">
       本页属于学生经验，不应视为学校正式规定。
