@@ -21,11 +21,11 @@ sources: []
 
 ## 一、登录Github
 
-Github官网：https://github.com/
+Github官网：[官网链接](https://github.com/)
 
 如果没有账号就注册一个，然后保持你浏览器的Github登录状态。
 
-然后进入项目的首页：https://github.com/pppolf/SCSWiki，你会看到如下页面
+然后进入项目的首页：[项目链接](https://github.com/pppolf/SCSWiki)，你会看到如下页面
 
 ![image-20260627152708303](/images/image-20260627152708303.png)
 
@@ -45,7 +45,7 @@ Github官网：https://github.com/
 
 ![image-20260627153137419](/images/image-20260627153137419.png)
 
-这里我使用命令行操作，打开终端，cd到你想保存的位置，随后输入 
+这里我使用命令行操作，打开终端，cd到你想保存的位置，随后输入
 
 ```sh
 git clone https://github.com/你的GitHub用户名/SCSWiki.git
@@ -77,19 +77,19 @@ git clone https://github.com/你的GitHub用户名/SCSWiki.git
 
 回到 vscode 中查看当前分支和修改：
 
-```
+```sh
 git status
 ```
 
 查看远程仓库：
 
-```
+```sh
 git remote -v
 ```
 
 正常情况下应该至少有：
 
-```
+```sh
 origin  https://github.com/你的用户名/SCSWiki.git
 ```
 
@@ -100,19 +100,19 @@ origin  https://github.com/你的用户名/SCSWiki.git
 
 如果还没有 `upstream`，添加它：
 
-```
+```sh
 git remote add upstream https://github.com/pppolf/SCSWiki.git
 ```
 
 再次确认：
 
-```
+```sh
 git remote -v
 ```
 
 应该类似：
 
-```
+```sh
 origin    https://github.com/你的用户名/SCSWiki.git (fetch)
 origin    https://github.com/你的用户名/SCSWiki.git (push)
 upstream  https://github.com/pppolf/SCSWiki.git (fetch)
@@ -125,19 +125,19 @@ upstream  https://github.com/pppolf/SCSWiki.git (push)
 
 切换到主分支：
 
-```
+```sh
 git switch main
 ```
 
 从原项目获取最新提交：
 
-```
+```sh
 git fetch upstream
 ```
 
 把上游最新代码合并到本地主分支：
 
-```
+```sh
 git merge upstream/main
 ```
 
@@ -145,19 +145,19 @@ git merge upstream/main
 
 以当前 `root` 用户执行：
 
-```
+```sh
 ssh-keygen -t ed25519 -C "你的GitHub邮箱"
 ```
 
 出现：
 
-```
+```sh
 Enter file in which to save the key
 ```
 
 直接回车，默认保存到：
 
-```
+```sh
 /root/.ssh/id_ed25519
 ```
 
@@ -167,19 +167,19 @@ Enter file in which to save the key
 
 查看公钥
 
-```
+```sh
 cat ~/.ssh/id_ed25519.pub
 ```
 
 会输出类似：
 
-```
+```sh
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... xxx@xxx.com
 ```
 
 复制完整的一整行。进入 GitHub 网页：
 
-```
+```text
 右上角头像
 → Settings
 → SSH and GPG keys
@@ -188,7 +188,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... xxx@xxx.com
 
 填写：
 
-```
+```yml
 Title: SCSWiki
 Key type: Authentication Key
 Key: 粘贴刚才的完整公钥
@@ -196,62 +196,62 @@ Key: 粘贴刚才的完整公钥
 
 点击：
 
-```
+```text
 Add SSH key
 ```
 
 回到虚拟机测试连接：
 
-```
+```sh
 ssh -T git@github.com
 ```
 
 第一次可能出现：
 
-```
+```sh
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
 输入：
 
-```
+```sh
 yes
 ```
 
 成功时会看到类似：
 
-```
+```sh
 Hi github账号! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 把仓库地址从 HTTPS 改成 SSH，当前你当前的地址是：
 
-```
+```text
 https://github.com/你的github账号/SCSWiki.git
 ```
 
 改为：
 
-```
+```sh
 git remote set-url origin git@github.com:你的github账号/SCSWiki.git
 ```
 
 检查：
 
-```
+```sh
 git remote -v
 ```
 
 应该显示：
 
-```
+```sh
 origin  git@github.com:你的github账号/SCSWiki.git (fetch)
 origin  git@github.com:你的github账号/SCSWiki.git (push)
 ```
 
 然后再次推送：
 
-```
+```sh
 git push origin main
 ```
 
@@ -261,13 +261,13 @@ git push origin main
 
 例如，你准备添加一篇校园网教程：
 
-```
+```sh
 git switch -c docs/add-campus-network-guide
 ```
 
 分支名称建议使用：
 
-```
+```text
 docs/xxx       文档修改
 fix/xxx        修复错误
 feat/xxx       新功能
@@ -277,13 +277,13 @@ chore/xxx      工程配置
 
 查看当前分支：
 
-```
+```sh
 git branch
 ```
 
 带 `*` 的是当前分支：
 
-```
+```sh
 * docs/add-campus-network-guide
   main
 ```
@@ -317,7 +317,6 @@ sources: []
 ## 注意事项
 
 不要向任何人泄露账号和密码。
-
 ```
 
 请注意，在新添加了某页面，需要在 `/docs/.vitepress/sidebar.ts` 里添加对应的链接。比如现在我们是添加的 `/campus` 下的，所以我们就找对应的区域加，写上 text 和 link 就行了
@@ -345,19 +344,19 @@ sources: []
 
 查看状态：
 
-```
+```sh
 git status
 ```
 
 添加到暂存区：
 
-```
+```sh
 git add .
 ```
 
 检查暂存区内容：
 
-```
+```sh
 git diff --cached
 ```
 
@@ -365,25 +364,25 @@ git diff --cached
 
 创建 Commit 提交：
 
-```
+```sh
 git commit -m "docs: add campus network guide"
 ```
 
 中文也可以：
 
-```
+```sh
 git commit -m "docs: 添加校园网络使用指南"
 ```
 
 推荐格式：
 
-```
+```yml
 类型: 简短描述
 ```
 
 常用类型：
 
-```
+```yml
 docs: 文档修改
 fix: 修复问题
 feat: 添加功能
@@ -395,7 +394,7 @@ style: 格式调整
 
 示例：
 
-```
+```sh
 git commit -m "docs: add freshman registration guide"
 git commit -m "fix: correct broken link in campus guide"
 git commit -m "feat: add assistant entry component"
@@ -403,7 +402,7 @@ git commit -m "feat: add assistant entry component"
 
 提交后查看记录：
 
-```
+```sh
 git log --oneline -5
 ```
 
@@ -411,13 +410,13 @@ git log --oneline -5
 
 第一次推送当前分支：
 
-```
+```sh
 git push -u origin docs/add-campus-network-guide
 ```
 
 其中：
 
-```
+```sh
 origin
 ```
 
@@ -425,13 +424,13 @@ origin
 
 后续再修改并提交后，只需要：
 
-```
+```sh
 git push
 ```
 
 如果命令成功，终端一般会提示：
 
-```
+```sh
 Create a pull request for 'docs/add-campus-network-guide'
 ```
 
@@ -441,7 +440,7 @@ Create a pull request for 'docs/add-campus-network-guide'
 
 通常会看到一个黄色或绿色提示：
 
-```
+```sh
 Compare & pull request
 ```
 
@@ -449,7 +448,7 @@ Compare & pull request
 
 确认以下内容：
 
-```
+```sh
 base repository: 原始项目仓库
 base branch: main
 
@@ -459,7 +458,7 @@ compare branch: docs/add-campus-network-guide
 
 也就是说：
 
-```
+```sh
 你的分支
     ↓ 合并到
 原项目 main 分支
@@ -467,13 +466,13 @@ compare branch: docs/add-campus-network-guide
 
 PR 标题建议：
 
-```
+```sh
 docs: 添加校园网络使用指南
 ```
 
 PR 描述可以使用：
 
-```
+```markdown
 ## 修改内容
 
 - 新增校园网络使用指南
@@ -505,7 +504,7 @@ PR 描述可以使用：
 
 然后点击：
 
-```
+```text
 Create pull request
 ```
 
@@ -515,32 +514,32 @@ Create pull request
 
 PR 合并后，先切回主分支：
 
-```
+```sh
 git switch main
 ```
 
 同步上游最新内容：
 
-```
+```sh
 git fetch upstream
 git merge upstream/main
 ```
 
 推送到自己的 Fork：
 
-```
+```sh
 git push origin main
 ```
 
 删除本地分支：
 
-```
+```sh
 git branch -d docs/add-campus-network-guide
 ```
 
 删除远程 Fork 上的分支：
 
-```
+```sh
 git push origin --delete docs/add-campus-network-guide
 ```
 
@@ -548,7 +547,7 @@ git push origin --delete docs/add-campus-network-guide
 
 每次开始新任务：
 
-```
+```sh
 git switch main
 git fetch upstream
 git merge upstream/main
@@ -558,7 +557,7 @@ git switch -c docs/your-change
 
 完成修改后：
 
-```
+```sh
 git status
 git diff
 pnpm check
